@@ -30,3 +30,13 @@ function openPopup() {
     popup.classList.add("open-popup");
     blur.classList.toggle('active'); 
 }
+
+//enable closing of the popup
+$('.close' ).click(function() {
+    $('.popup' ).removeClass('open-popup' );
+    $('.blur' ).removeClass('active' );
+    });
+
+    
+    
+    

@@ -314,6 +314,7 @@ progress[value]::-moz-progress-bar {
     transition: transform 0.4s, top 0.4s;
     height: 70%;
 }
+
 .open-popup{
     visibility: visible;
     transform: translate(-50%, -50%) scale(1);
@@ -328,8 +329,25 @@ progress[value]::-moz-progress-bar {
 #blur.active{
     pointer-events: none;
     user-select: none;
-    opacity: 0.4;
+    opacity: 1.0;
+    filter: blur(5px);
+    
 }
+.projectHeader .close {
+    position:absolute;
+    top:30px;
+    right:25px;
+    width:15px;
+    height:15px;
+    cursor:pointer;
+    border-radius:8px;
+    background-color:#73757a;
+    clip-path: polygon(0 10%,10% 0,50% 40%,89% 0,100% 10%,60% 50%,100% 90%,90% 100%,50% 60%,10% 100%,0 89%,40% 50%);
+    
+    }
+    
+        
+    
 
 }
 
